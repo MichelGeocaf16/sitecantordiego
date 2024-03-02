@@ -1,0 +1,551 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+    
+
+/* root */
+
+:root{
+    --color-primary:#ffffff;
+    --color-secondary:#ff0000;
+    --bg-color:#000000;
+    --border-1:linear-gradient(to right,#CE8F30, #ff0000 );
+}
+
+header{
+background-color: #15181A;
+padding: 30px;
+
+
+
+
+}
+   
+
+/* header */
+
+header .navbar-brand img{
+    width: 250px;
+}
+
+/* navbar nav-link */
+.nav-link{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+}
+.nav-link:hover{
+    color: var(--color-secondary);
+}
+
+/* hero */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/imagens/renderizacao-3d-de-um-fundo-de-tela-com-interior-de-sala-esfumada-grunge-com-holofotes.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 25px;
+    position: relative;
+    
+   
+    
+}
+.hero img{
+    width: 350px;
+    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 450px;
+    
+
+    /* transition: 0.5s ease-in-out; */
+   
+}
+ .hero .logo-hero{
+    width: 500px;
+    position:absolute;
+    bottom: 180px;
+    left: 420px;
+    cursor: pointer;
+ }
+
+ .social-hero{
+    width: 55px;
+    height: 217px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0 ;
+    background-color: var(--color-secondary);
+    position: absolute;
+    bottom: 350px;
+    right: 0;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+ 
+ .social-hero i{
+    font-size: 40px;
+    color: var(--color-primary);
+    transition: 0.5s ease-in-out;
+   
+ }
+ 
+ .social-hero i:hover{
+    font-size: 40px;
+    color: var(--bg-color);
+   
+   
+ }
+/* agenda */
+
+.agenda{
+    background-color: var(--bg-color);
+    padding: 30px ;
+     height: 500px;
+    
+    
+    
+    
+}
+
+.agenda h2{
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    margin-top:10px ;
+}
+
+.agenda h2 span{
+    color: var(--color-secondary);
+}
+
+
+
+/* carrousel */
+.carousel-item{
+    text-align: center;
+    margin-left: 400px;
+    margin-bottom: 60px;
+    
+}
+
+.container-agenda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container-card{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    max-height: 450px;
+}
+
+.container-flip{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container-card:hover .container-flip{
+    transform: rotateY(180deg);
+}
+
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #0000009d;
+    padding: 20px;
+    backface-visibility: hidden;
+}
+
+.front{
+    background-image: url('/imagens/02.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: 10px;
+  
+}
+
+.front h2{
+    color: var(--color-primary);
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.front h3{
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--color-secondary);
+}
+
+.front p{
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.back{
+   
+    background-color: #fdfdfd;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.back h2{
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+}
+.back h3{
+    font-size: 1rem;
+}
+
+.back .title{
+    color: var(--color-secondary);
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+.back p{
+margin-bottom: 2px;
+font-size: 0.8rem;
+}
+
+.container-social p{
+    font-weight: 500;
+}
+
+.container-social i{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* VIDEOS */
+
+.videos-portifolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        background-image: url('/imagens/01.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        
+        
+}
+
+
+
+.videos-portifolio h2{
+    color: var(--color-primary);
+    text-align: left;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 900;
+    margin-top: 80px;
+}
+
+.videos-portifolio h2 span{
+    color: var(--color-secondary);
+}
+
+.videos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+ video {
+    border: 2px solid var(--color-secondary);
+    border-image: var(--border-1) 1;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    
+}
+
+
+
+
+
+/* BIOGRAFIA */
+
+.biografia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-items: center;
+   margin-top: 80px;
+}
+
+
+.biografia h2{
+    color: var(--bg-color);
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-top: 80px;
+    
+}
+
+.biografia h2 span{
+    color: var(--color-secondary);
+}
+.biografia .sobre-diego{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.biografia .sobre-diego img{
+    width: 400px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.biografia .sobre-diego p{
+    max-width: 500px;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 60px;
+
+ 
+}
+.parceiros{
+    background-color: #ece7e7;
+    padding: 20px;
+margin-bottom: 0px;
+    width: 100vw;
+}
+.parceiros ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.parceiros li{
+    list-style: none;
+    margin-right: 15px;
+}
+.biografia .parceiros ul li img{
+    width: 100px;
+}
+.parce{
+   margin-top: 10px;
+    font-weight: 700;
+   
+}
+
+
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding-bottom: 80px;
+    position: relative;
+}
+
+footer h2{
+    margin-top: 80px;
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+footer h2 span{
+    color: var(--color-secondary);
+}
+
+footer h3{
+    color: var(--color-primary);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+footer .copy {
+    margin-top: 120px;
+    color:var(--color-primary);
+}
+
+footer .top i{
+    font-size: 30px;
+    color: var(--color-secondary);
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+}
+
+
+
+.shows-eventos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    gap: 500px;
+}
+
+.contato-phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contato-phone h3{
+    color: var(--color-secondary);
+}
+
+.contato-phone p{
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 18px;
+}
+.contato-phone i{
+    color: var(--color-secondary);
+    font-size: 30px;
+}
+
+.shows-eventos img{
+
+    width: 250px;
+
+
+}
+.sociais-diego i{
+ font-size: 40px;
+ color: var(--color-primary);
+ margin: 15px;
+ margin-top: 16px;
+}
+
+.sociais-diego i:hover{
+ color: var(--color-secondary);
+ transition: 0.5s;
+}
+
+.navbar-toggler-icon{
+background-color: var(--color-secondary);
+
+
+}
+.btn-mobile{
+    color: var(--color-secondary);
+    font-size: 40px;
+}
+
+/* medias querys */
+
+@media(max-width:576px) {
+
+    .hero img{
+
+        width: 250px;
+        left: 80px;
+       
+    
+    }
+
+    .hero .logo-hero{
+        left: 80px;
+        width: 250px;
+        
+    }
+    
+    .eventos .social{
+       
+        margin-bottom: 400px;
+
+    }
+    .shows-eventos{
+        flex-direction: column;
+        gap:50px;
+    }
+
+    .carousel-item p{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    
+     video {
+       
+       width: 370px;
+       text-align: center;
+      
+       
+    }
+    .biografia .sobre-diego{
+        flex-direction: column;
+    }
+
+    .biografia .sobre-diego img{
+        width: 250px;
+    }
+    .sobre-diego p{
+        text-align: justify;
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    .biografia .parceiros ul{
+        flex-wrap: wrap;
+        padding: 20px;
+       align-content: center;
+       gap: 30px;
+        
+    }
+
+    
+.sobre-diego p{
+    padding: 0px 30px;
+   
+}
+
+footer .top i{
+    display: none;
+}
+
+.carousel-item{
+    margin-left: -10px;
+}
+
+.back{
+   
+justify-content: center;
+}
+    
+}
